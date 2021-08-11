@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', sans-serif;
+  }
+  /*Header*/
+  .hdlr {
+    padding-right:40px;
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+  }
+  .ht {
+    display: flex;
+  }
+  .ltt {
+    font-weight: 600;
+    font-size: 36px;
+    color: #ff5252;
+    padding-left: 140px;
+    padding-top: 110px;
+    z-index: 1;
+  }
+  #logo {
+    height:180px ;
+    padding:0;
+    position: absolute;
+    width: 200px;
+  }
+  .search .input{
+    border: 0;
+    outline: none;
+    color: #ff5252;
+}
+
+._searchlr{
+    width: 500px;
+}
+
+._searchlr .search_boxlr{
+    position: relative;
+    width: 500px;
+    height: 40px;
+    top: 60px;
+}
+
+._searchlr .search_boxlr .input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 12px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+._searchlr .search_boxlr .btlr{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background: #ff5252;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+._searchlr .search_boxlr .btlr.btlr_common i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 20px;
+}
+#lmap {
+  position: absolute;
+    top: 50%;
+    left: -780%;
+    transform: translate(-50%,-50%);
+    color: #ff5252;
+    font-size: 32px;
+}
+/* Login Section*/
+  .loginpart
+  {
+      display: flex;
+      background-image: url("https://drive.google.com/uc?export=view&id=1q5zaITQi4JPio40MYNsfqgu-cohAsxxa");
+      background-size: cover;
+      justify-content: flex-end;
+      padding: 60px 130px ;
+      margin:0px 10px 40px 10px;
+  }
+  .lwrapper{
+    overflow: hidden;
+    max-width: 390px;
+    background: #fff;
+    padding: 30px;
+    margin: 4px 60px;
+    border-radius: 8px;
+  }
+  .txt{
+    display: flex;
+    width: 200%;
+  }
+  .lwrapper .title{
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .lwrapper .sc{
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+  }
+  .sc .slide{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .sc label.signup{
+    color: #000;
+  }
+  .sc .st{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    border-radius: 5px;
+    background: #ff5252;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  .sc input[type="radio"]{
+    display: none;
+  }
+ #signup:checked ~ .st{
+    left: 50%;
+  }
+  #signup:checked ~ label.signup{
+    color: #fff;
+    cursor: default;
+    user-select: none;
+  }
+  #signup:checked ~ label.login{
+    color: #000;
+  }
+  #login:checked ~ label.signup{
+    color: #000;
+  }
+  #login:checked ~ label.login{
+    cursor: default;
+    user-select: none;
+  }
+  .lwrapper .containerlr{
+    width: 100%;
+    overflow: hidden;
+  }
+  .containerlr .formlr{
+    display: flex;
+    width: 200%;
+  }
+  .containerlr .formlr form{
+    width: 50%;
+  }
+  .formlr form .fieldlr{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .formlr form .fieldlr input{
+    height: 100%;
+    width: 100%;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom: 2px;
+    font-size: 17px;
+  }
+  .formlr form .fieldlr input:focus{
+    border-color: #ff5252;
+  }
+  .formlr form .fieldlr input::placeholder{
+    color: #999;
+    transition: all 0.3s ease;
+  }
+  form .fieldlr input:focus::placeholder{
+    color: #b3b3b3;
+  }
+  .formlr form .fpass{
+    margin-top: 5px;
+  }
+  .formlr form .nacc{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .formlr form .fpass a,
+  .formlr form .nacc a{
+    color: #ff5252;
+    text-decoration: none;
+  }
+  .formlr form .fpass a:hover,
+  .formlr form .nacc a:hover{
+    text-decoration: underline;
+  }
+  form .btnlr{
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  form .btnlr .btnlr-layer{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: #ff5252;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+  }
+  form .btnlr input[type="submit"]{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    background: #ff5252;
+    border: none;
+    color: #fff;
+    padding-left: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  /* Footer */
+  .footerlr{
+    background:#ff5252;
+    color:#fffaf0;
+    margin:0;
+    height:300px;
+    padding-bottom: 0;
+    padding-top: 4%;
+    width: 100%;
+    font-family:"Merriweather Sans — Regular";
+    font-size: 20px;
+}
+.orderlr{
+    margin-left:20px;
+    margin-right:20px;
+    height:50px;
+}
+.footerlr h3{
+    margin:-50px 150px;
+    top:-10px;
+}
+.footerlr p{
+    margin:70px 60px;
+    color:#fffaf0;
+    font-size:18px;
+    margin-bottom:20px;
+    font-family:"Merriweather Sans — Regular";
+}
+.footerlr img{
+    margin:0px 20px;
+    position:absolute;
+}
+.quicklr{
+    margin:-80px 420px;
+    top:-10px;
+    font-size:18px;
+    color:#fffaf0;
+    font-family:"Merriweather Sans — Regular";
+}
+.detailslr{
+    margin:70px 450px;
+    top:-30px;
+    font-size:18px;
+    color:#fffaf0;
+    font-family:"Merriweather Sans — Regular";
+}
+.outletlr{
+    margin:-185px 600px;
+    top:-10px;
+    font-size:18px;
+    color:#fffaf0;
+    font-family:"Merriweather Sans — Regular";
+}
+.details1lr{
+    margin:175px 610px;
+    top:-10px;
+    font-size:18px;
+    color:#fffaf0;
+    font-family:"Merriweather Sans — Regular";
+}
+.companylr{
+    margin:-290px 790px;
+    top:-10px;
+    font-size:18px;
+    color:#fffaf0;
+    font-family:"Merriweather Sans — Regular";
+}
+.details2lr{
+    margin:280px 810px;
+    top:-10px;
+    font-size:18px;
+    color:#fffaf0;
+    font-family:"Merriweather Sans — Regular";
+}
+.addresslr{
+    margin:-395px 990px;
+    top:-10px;
+    font-size:18px;
+    color:#fffaf0;
+    font-family:"Merriweather Sans — Regular";
+ }
+ .routelr{
+    margin:290px 1200px;
+    color:#fffaf0;
+    font-size:18px;
+    top:-10px;
+    margin-bottom:20px;
+    font-family:"Merriweather Sans — Regular";
+}
+.route1lr{
+    height:100px;
+    width:360px;
+    float:left;
+    margin:-10px 1150px;
+    border:2px solid black;
+}
+.followlr {
+    height: 30px;
+    width: 0px;
+    margin: 265px 1400px;
+    top: 750px;
+    position: absolute;
+    color: tan;
+    display: flex;
+}
+#t1lr{
+    margin:265px 1400px;
+    top:-20px;
+    font-size:14px;
+    color:#fffaf0;
+    font-family:"Merriweather Sans — Regular";
+}
+/*Responsive Web Design*/
+  @media (max-width:600px){
+    .loginpart
+  {
+      display: flex;
+      padding:0;
+      justify-content: center;
+      height:460px;
+      margin:0;
+  } 
+  .lwrapper {
+    display: block;
+    padding:30px 0px;
+    margin:10px;
+    width:100%;
+  }
+  .lwrapper .sc{
+    display: flex;
+    padding:0;
+    margin:0;
+    width: 100%;
+  }
+ 
+  .formlr form .fieldlr{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .containerlr .formlr{
+    display: flex;
+    width: 200%;
+    padding:0
+  }
+  .containerlr .formlr form{
+    width: 50%;
+  }
+  .sc .slide{
+    height: 100%;
+    width: 50%;
+  }
+  .sc .st{
+    height: 100%;
+
+  }
+    ._searchlr{
+      width: 100px;
+
+  }
+
+  ._searchlr .search_boxlr{
+      position: relative;
+      width: 400px;
+      height: 40px;
+      top: 30px;
+      left: 60px;
+  }
+  .hdlr {
+    padding-right:40px;
+    display: block;
+    justify-content: space-between;
+  }
+  .ltt {
+    font-size: 28px;
+    padding-left: 80px;
+    padding-top: 70px;
+  }
+  #logo {
+    height:100px ;
+    width:180px;
+  }
+  #lmap {
+      top: 44%;
+      left: -620%;
+      font-size: 40px;
+  }
+  form .btnlr{
+    height: 50px;
+    width: 10%;
+  }
+  .footerlr {
+    display: none;
+  }
+  }
+  
