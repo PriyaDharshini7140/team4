@@ -1,5 +1,4 @@
 <?php
-
-include_once=("Login.html");
+include_once('home.html');
 
 ?>
